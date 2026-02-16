@@ -25,6 +25,7 @@
 html{
     font-size: 62.5%; /* 1 rem = 10px */
     box-sizing: border-box; /* Size no modificable por padding */
+    scroll-snap-type: y mandatory;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -94,6 +95,12 @@ h1,h2,h3{
 /* Títulos */
 .titulo span{
     font-size: 2rem;
+}
+
+/* Scroll Snap */
+.servicios, .navegacion-principal, .formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 /* Navegación principal */
