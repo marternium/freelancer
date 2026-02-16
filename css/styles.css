@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Krub-Regular";
+    src: url("../fonts/Krub-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Krub-Bold";
+    src: url("../fonts/Krub-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root{
+    --white: #fff;
+    --dark-color: #212121;
+    --primary-color:#ffc107;
+    --secondary-color: #0097a7;
+    --gray: #757575;
+}
+
+/* 1 rem = 10px */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: "Krub-Regular", sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    font-family: "Krub-Bold", sans-serif;
+}
+.titulo span{
+    font-size: 2rem;
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secondary-color);
+}
+
+.navegacion-principal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Krub-Bold";
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
